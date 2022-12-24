@@ -10,6 +10,7 @@ function playSound(evt) {
    const audioPlay = document.querySelector(`audio[data-key="${evt.keyCode}"]`);
    // select the divs in the html and display the play class 
    const keySelector = this.document.querySelector(`.key[data-key="${evt.keyCode}"]`);
+   console.log(keySelector);
   
    if(!audioPlay) return; //stops the function from all together 
    audioPlay.currentTime = 0; // rewind to the start
